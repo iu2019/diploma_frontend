@@ -14,13 +14,13 @@
 }
 
 .news-card__like-icon_liked {
-  background-image: url(../../../images/like_marked.svg) ;
+  background: url(../../../images/like_marked.svg) center no-repeat;
   
  
 }
 
 .news-card__like-icon:hover {
-  background-image: url(../../../images/like_hover.svg) ;
+  background: url(../../../images/like_hover.svg) center no-repeat;
   /* transform: scale(1.03); */
 }
 

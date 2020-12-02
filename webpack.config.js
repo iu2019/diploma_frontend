@@ -87,42 +87,14 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'logged.html',
-            template: './src/logged.html',
-            minify: false,
-            chunks: ['main']
-        }),
+       
         new HtmlWebpackPlugin({
             filename: 'saved.html',
             template: './src/saved.html',
             minify: false,
             chunks: ['main']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'saved_short.html',
-            template: './src/saved_short.html',
-            minify: false,
-            chunks: ['main']
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'signin.html',
-            template: './src/signin.html',
-            minify: false,
-            chunks: ['main']
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'signup.html',
-            template: './src/signup.html',
-            minify: false,
-            chunks: ['main']
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'signup_successful.html',
-            template: './src/signup_successful.html',
-            minify: false,
-            chunks: ['main']
-        }),
+        
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
         }),
