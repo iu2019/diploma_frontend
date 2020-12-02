@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NewsAnalyzer</title>
-    <link rel="stylesheet" href="main.71795b396e5c5cd095e4.css">
+    <!-- <link rel="stylesheet" href="main.71795b396e5c5cd095e4.css"> -->
     <link rel="icon" href="./images/favicon.svg" type="image/x-icon">
-    <!-- ./images/logo.svg -->
-    <!-- <link rel="stylesheet" href="./pages/index.css"> -->
+    <link rel="stylesheet" href="./pages/index.css">
   <link href="main.71795b396e5c5cd095e4.css" rel="stylesheet"></head>
 
   <body class="body">
@@ -21,9 +20,9 @@
         
       <!-- DESKTOP -->
       <page class="page screen_desktop">
-        <!-- Для открытия верстки одной из секций header и header_logged нужно класс 
+        <!-- Для открытия верстки попапа одной из секций header и header_logged нужно класс 
         тэга nav противоположной секции header дополнить классом disabled. Для открываемой секции модификатор не нужен. -->
-        <header class="header header_theme_dark screen_desktop  ">
+        <header class="header header_theme_dark screen_desktop  disabled">
                   
               <nav class="header header_theme_dark ">
                 <div class="header__placeholder">
@@ -35,7 +34,7 @@
                     </li>
                     <li class="header__link header__link_outline">
                       <!-- header__list-item_outline - пункт меню обведен в овальную рамку. Дополняет тэг li -->
-                      <a class="header__list-item " href="signup.html">Авторизоваться</a>
+                      <a class="header__list-item " href="logged.html">Авторизоваться</a>
                     </li>
                   </ul>
                 </div>
@@ -43,7 +42,7 @@
           
         </header>
         
-        <header class="header header_theme_dark screen_desktop header_logged disabled">
+        <header class="header header_theme_dark screen_desktop header_logged ">
           
               <nav class="header header_theme_dark">
                 <div class="header__placeholder">
@@ -57,7 +56,7 @@
                     </li>
                     <li class="header__list-item ">
                       <a class="header__link header__link_outline" href="index.html">Грета&nbsp;
-                        <img class="header__exit-logo" src="./images/exit.svg" alt="exit"> <!-- Exit -->
+                        <img class="header__exit-logo" src="images/exit.svg" alt="exit"> <!-- Exit -->
                       </a>
                     </li>
                   </ul>
@@ -71,7 +70,7 @@
           <p class="lead__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
           
           <form class="search" name="keyword" novalidate>
-              <input type="text" name="search-keyword" class="search__input" placeholder="Введите тему новости" minlength="2" required>
+              <input type="text" name="search-keyword" class="search__input" placeholder="Введите тему новости">
               <!-- <p class="search__error-message "></p> -->
                
               <button class="search__button">Искать</button>
@@ -85,8 +84,7 @@
           <div class="search-results__placeholder">
                 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_1">
-                               <!-- ./images/logo.svg -->
+              <div class="news-card__image" style="background-image:url('images/image_08.jpg')">
                 <button class="news-card__message news-card__message_position_left">
                   <p class="news-card__comment">Природа</p>
                 </button>
@@ -105,7 +103,7 @@
               <div class="news-card__text-container">
                 <div class="news-card__date">2 августа, 2019</div>
                 
-                  <h3 class="news-card__name " >Национальное достояние – парки</h3>
+                  <h3 class="news-card__name" >Национальное достояние – парки</h3>
                   <p class="news-card__text line-clamp">
                     В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
                     национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе бла бла бла бла бла бла бла бла бла бла.
@@ -116,8 +114,7 @@
             </div>
 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_2" >
-                <!-- style="background-image:url('../../../images/image_04.jpg')" -->
+              <div class="news-card__image" style="background-image:url('images/image_04.jpg')">
                 <button class="news-card__message news-card__message_position_left">
                   <p class="news-card__comment">Природа</p>
                 </button>
@@ -127,7 +124,7 @@
                   <p class="news-card__comment">Убрать из сохраненных</p>
                 </button>
 
-                <button class="news-card__like-icon "></button>
+                <button class="news-card__like-icon_liked "></button>
                 <button class="news-card__message ">
                   <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
                 </button>
@@ -146,7 +143,7 @@
             </div>
 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_3" >
+              <div class="news-card__image" style="background-image:url('images/image_07.jpg')">
                 <button class="news-card__message news-card__message_position_left">
                   <p class="news-card__comment">Природа</p>
                 </button>
@@ -198,7 +195,7 @@
           <div class="author-info__photo"></div>
           <div class="author-info__data">
             <h1 class="author-info__header">Об авторе</h1>
-            <p class="author-info__text">
+            <p class="author-info__text ">
               Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями
               разработки владеете. 
             </p>
@@ -221,12 +218,12 @@
             <ul class="footer__link-container">
               <li class="footer__list-item">
                 <a class="footer__link footer__link_social" href="https://github.com/" target="_blank">
-                    <img class="" src="./images/github.svg" alt="GitHub"> 
+                    <img class="" src="images/github.svg" alt="GitHub"> 
                 </a>
               </li>
               <li class="footer__list-item">
                 <a class="footer__link footer__link_social" href="https://www.facebook.com/yandex.praktikum/" target="_blank">
-                    <img class="" src="./images/fb.svg" alt="facebook">  
+                    <img class="" src="images/fb.svg" alt="facebook">  
                 </a>
               </li>
             </ul>
@@ -236,25 +233,21 @@
         <section class="signin">
           <div class="popup ">
           <!-- Для открытия верстки попапа одной из секций signin, signup или signup_successful нужно класс 
-          popup дополнить миксом enabled. Другие две секции должны не иметь этого микса -->
+          popup дополнить классом enabled. Другие две секции должны не иметь этого дополнения -->
             <div class="popup__content">
               <!-- <img src="./images/close.svg" alt="X" class="popup__close "> -->
               <img src="./images/close.svg" alt="X" class="popup__close ">
               <h3 class="popup__title">Вход</h3>
-              <form class="popup__form" name="signin">
+              <form class="popup__form" name="signin" novalidate>
                   <div class="popup__block">
                     <label for="email" class = "popup__label">Email</label>
-                    <input type="email" name="email" class="popup__input email" placeholder="Введите почту" 
-                      title="The domain portion of the email address is invalid (the portion after the @)." 
-                      pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
-                      required>
+                    <input type="text" name="email" class="popup__input email" placeholder="Введите почту">
                     <p class="popup__error-message ">Неправильный формат email</p>
                   </div>  
                   <div class="popup__block">
                     <label for="pwd" class = "popup__label">Пароль</label>
-                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-                    
-                      <p class="popup__error-message "></p>
+                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль">
+                    <p class="popup__error-message "></p>
                   </div>  
                    
                   <button class="button popup__button ">Войти</button>
@@ -270,24 +263,20 @@
               <!-- <img src="./images/close.svg" alt="X" class="popup__close "> -->
               <img src="./images/close.svg" alt="X" class="popup__close ">
               <h3 class="popup__title">Регистрация</h3>
-              <form class="popup__form" name="signup" novalidate>
+              <form class="popup__form" name="signin" novalidate>
                   <div class="popup__block popup__block_func_signup">
                     <label for="email" class = "popup__label">Email</label>
-                    <input type="email" name="email" class="popup__input email" placeholder="Введите почту" 
-                      title="The domain portion of the email address is invalid (the portion after the @)." 
-                      pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
-                      <p class="popup__error-message ">Неправильный формат email</p>
-                      required>
+                    <input type="text" name="email" class="popup__input email" placeholder="Введите почту">
                     <p class="popup__error-message "></p>
                   </div>  
                   <div class="popup__block popup__block_func_signup">
                     <label for="pwd" class = "popup__label">Пароль</label>
-                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль">
                     <p class="popup__error-message "></p>
                   </div>  
                   <div class="popup__block popup__block_func_signup">
                     <label for="name" class = "popup__label">Имя</label>
-                    <input type="text" name="name" class="popup__input name" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
+                    <input type="text" name="name" class="popup__input name" placeholder="Введите своё имя">
                     
                   </div>
                   <p class="popup__error-message popup__error-message_func_db-error">Такой пользователь уже есть</p>
@@ -311,7 +300,7 @@
         
       </page>
 
-      <!-- MOBILE -->
+        <!-- MOBILE -->
 
       <page class="page screen_mobile">
         <header class="header header_theme_dark header_screen_mobile screen_mobile">
@@ -329,8 +318,8 @@
               <ul class="header__link-container">
                 
                 <li class="header__list-item">
-                  <a class="header__menu" href="./logged.html">
-                    <img class="header__further-logo"  src="./images/menu_mob.svg" alt="Значок перехода на дополнительный экран меню мобильной версии">
+                  <a class="header__menu" href="mobile_menu.html">
+                    <img class="" src="images/menu_mob.svg" alt="Дополнительный экран меню мобильной версии">
                   </a>
                 </li>
               </ul>
@@ -353,9 +342,7 @@
         </section>
 
         <section class="menu-additional ">
-          <div class="popup-mobile ">
-            
-            <!-- Для открытия попапа дополнительного меню авторизации мобильной версии нужно класс popup-mobile дополнить классом enabled.  -->
+          <div class="popup-mobile enabled">
             <div class="popup-mobile__content  ">
               <!-- <img src="./images/close.svg" alt="X" class="popup__close "> -->
               <!-- <img src="./images/close_mob.jpg" alt="X" class="popup-mobile__close "> -->
@@ -375,7 +362,7 @@
                       
                       <li class="header__list-item">
                         <a class="header__menu" href="./logged.html">
-                          <img class="popup-mobile__close" src="./images/close_no_bckg.svg" alt="Крестик">
+                          <img class="" src="./images/close_no_bckg.svg" alt="Крестик">
                         </a>
                       </li>
                     </ul>
@@ -407,7 +394,7 @@
           <div class="search-results__placeholder screen_mobile">
                 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_1" >
+              <div class="news-card__image" style="background-image:url('images/image_08.jpg')">
                 <button class="news-card__message news-card__message_position_left">
                   <p class="news-card__comment">Природа</p>
                 </button>
@@ -437,7 +424,7 @@
             </div>
 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_2" >
+              <div class="news-card__image" style="background-image:url('images/image_04.jpg')">
                 <button class="news-card__message news-card__message_position_left">
                   <p class="news-card__comment">Природа</p>
                 </button>
@@ -466,7 +453,7 @@
             </div>
 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_3" >
+              <div class="news-card__image" style="background-image:url('images/image_07.jpg')">
                 <button class="news-card__message news-card__message_position_left">
                   <p class="news-card__comment">Природа</p>
                 </button>
@@ -527,12 +514,12 @@
               <ul class="footer__link-container_screen_mobile">
                 <li class="footer__list-item">
                   <a class="footer__link footer__link_social" href="https://github.com/" target="_blank">
-                      <img class="" src="./images/github.svg" alt="GitHub"> 
+                      <img class="" src="images/github.svg" alt="GitHub"> 
                   </a>
                 </li>
                 <li class="footer__list-item">
                   <a class="footer__link footer__link_social" href="https://www.facebook.com/yandex.praktikum/" target="_blank">
-                      <img class="" src="./images/fb.svg" alt="facebook">  
+                      <img class="" src="images/fb.svg" alt="facebook">  
                   </a>
                 </li>
               </ul>
@@ -540,78 +527,6 @@
           </div>
           <p class="footer__copyright">&copy; 2020 Supersite, Powered by News API</p>
         </footer>
-
-        <section class="signin">
-          <div class="popup ">
-          <!-- Для открытия верстки попапа одной из секций signin, signup или signup_successful нужно класс 
-          popup дополнить миксом enabled. Другие две секции должны не иметь этого микса -->
-          
-          
-          
-          <div class="popup__content">
-              <!-- <img src="./images/close.svg" alt="X" class="popup__close "> -->
-              <img src="./images/menu_mob.svg" alt="X" class="popup__close ">
-              <h3 class="popup__title">Вход</h3>
-              <form class="popup__form" name="signin" novalidate>
-                  <div class="popup__block">
-                    <label for="email" class = "popup__label">Email</label>
-                    <input type="text" name="email" class="popup__input email" placeholder="Введите почту">
-                    <p class="popup__error-message ">Неправильный формат email</p>
-                  </div>  
-                  <div class="popup__block">
-                    <label for="pwd" class = "popup__label">Пароль</label>
-                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль">
-                    <p class="popup__error-message "></p>
-                  </div>  
-                   
-                  <button class="button popup__button ">Войти</button>
-                  <p class="popup__link-line">или <a href="" class="popup__link">Зарегистрироваться</a></p>
-              </form>
-            </div>
-          </div>
-        </section>
-
-        <section class="signup ">
-          <div class="popup ">
-            <div class="popup__content popup__content_func_signup">
-              <!-- <img src="./images/close.svg" alt="X" class="popup__close "> -->
-              <img src="./images/menu_mob.svg" alt="X" class="popup__close ">
-              <h3 class="popup__title">Регистрация</h3>
-              <form class="popup__form" name="signin" novalidate>
-                  <div class="popup__block popup__block_func_signup">
-                    <label for="email" class = "popup__label">Email</label>
-                    <input type="text" name="email" class="popup__input email" placeholder="Введите почту">
-                    <p class="popup__error-message "></p>
-                  </div>  
-                  <div class="popup__block popup__block_func_signup">
-                    <label for="pwd" class = "popup__label">Пароль</label>
-                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль">
-                    <p class="popup__error-message "></p>
-                  </div>  
-                  <div class="popup__block popup__block_func_signup">
-                    <label for="name" class = "popup__label">Имя</label>
-                    <input type="text" name="name" class="popup__input name" placeholder="Введите своё имя">
-                    
-                  </div>
-                  <p class="popup__error-message popup__error-message_func_db-error">Такой пользователь уже есть</p>
-                  <button class="button popup__button">Зарегистрироваться</button>
-                  <p class="popup__link-line">или <a href="" class="popup__link">Войти</a></p>
-              </form>
-            </div>
-          </div>
-        </section>
-
-        <section class="signup_successful ">
-          <div class="popup popup_func_signup_successful ">
-            <div class="popup__content popup__content_func_signup_successful">
-              <img src="./images/menu_mob.svg" alt="X" class="popup__close ">
-              <p class="popup__title">Пользователь успешно зарегистрирован!</p>
-              <p class="popup__link-line popup__link-line_func_signup_successful"><a href="" class="popup__link">Войти</a></p>
-              
-            </div>
-          </div>
-        </section>
-
       </page>
 
 
