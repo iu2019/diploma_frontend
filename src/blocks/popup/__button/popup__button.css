@@ -11,13 +11,13 @@
   background-color: #D1D2D6;
 }
 
-/* .popup__button_active {
+ .popup__button_active {
   background-color: #2F71E5;
   color: white;
   outline: none;
 }
 
-.popup__button:focus {
+/* .popup__button:focus {
   background-color: #2F71E5;
   color: white;
   outline: none;

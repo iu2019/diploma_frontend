@@ -2,16 +2,16 @@
     width: 100%;
     /* max-width: 500px; */
     min-height: 18.9vw;
-    background-size: cover;
-    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-repeat: no-repeat; */
     
     
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
-    background-image: url('../../../images/image_08.jpg');
+    
     }
 
-    .news-card__image_example_1 {
+    /* .news-card__image_example_1 {
         background-image: url('../../../images/image_08.jpg');
     }
 
@@ -33,7 +33,7 @@
 
     .news-card__image_example_6 {
         background-image: url('../../../images/image_04.jpg');
-    }
+    } */
 
     @media (max-width:640px) {
         .news-card__image {

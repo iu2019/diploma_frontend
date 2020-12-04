@@ -1,5 +1,5 @@
 .popup__label {
     color: #2F71E5;
-    font-family: Inter;
+    font-family: Inter, 'Arial', sans-serif;
     font-size: 12px;
 }

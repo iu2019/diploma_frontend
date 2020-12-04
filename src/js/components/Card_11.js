@@ -1,5 +1,5 @@
-import Api from './Api'
-import {openPopupImg} from './PhotoPopup'
+import Api from '../api/Api_11'
+import {openPopupImg} from './PhotoPopup_11'
 
 const api = new Api;
 

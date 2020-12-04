@@ -42,7 +42,7 @@
     border-top-left-radius: 0.5rem;
     background-color: #fff;
 
-    font-family: 'Inter', 'Roboto', 'RobotoSlab', 'SourceSansPro' ;
+    font-family: 'Inter', 'Roboto', 'RobotoSlab', 'SourceSansPro', 'Arial', sans-serif ;
 }
 
 @media (max-width:640px) {

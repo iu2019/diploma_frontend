@@ -4,7 +4,7 @@
     max-width: 440px;
     max-height: 64px;
 
-    font-family: Roboto;
+    font-family: Roboto, 'Arial', sans-serif;
     font-weight: 400;
     font-size: .67rem;
     line-height: .92rem;
@@ -24,6 +24,11 @@
 .search__input:focus {
     
     outline: none;
+}
+
+.search__input:hover {
+    /* background-color: #347EFF; */
+    opacity: .9;
 }
 
 .search__input_screen_mobile {

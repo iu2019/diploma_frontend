@@ -1,15 +1,15 @@
-import {UserInfo, userInfo, popupAuthor} from './UserInfo'
-import {PopupHolder} from './Popup'
-import {PhotoPopup} from './PhotoPopup'
+import {UserInfo, userInfo, popupAuthor} from './js/components/UserInfo_11'
+import {PopupHolder} from './js/components/Popup_11'
+import {PhotoPopup} from './js/components/PhotoPopup_11'
 // import {editProfile} from './Global'
-import {renderLoading} from './renderLoading'
-import FormValidator from './FormValidator'
-import {CardList, cardList, popupNewCard} from './CardList'
-import {Card} from './Card'
-import Api from './Api'
-import {createNewCard} from './Card'
+import {renderLoading} from './js/components/renderLoading_11'
+import FormValidator from './js/components/FormValidator_11'
+import {CardList, cardList, popupNewCard} from './js/components/CardList_11'
+import {Card} from './js/components/Card_11'
+import Api from './js/api/Api_11'
+import {createNewCard} from './js/components/Card_11'
 
-import '../pages/index.css'
+import './pages/index.css'
 
 
 const userInfoButton = document.querySelector('.user-info__button');

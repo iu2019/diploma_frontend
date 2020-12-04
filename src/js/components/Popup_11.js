@@ -1,4 +1,4 @@
-import FormValidator from './FormValidator'
+import FormValidator from './FormValidator_11'
 
 export class PopupHolder {
     constructor (initState, type, template, eventListener, toBind) {

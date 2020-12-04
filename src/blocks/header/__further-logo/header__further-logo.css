@@ -9,3 +9,7 @@
 .header__further-logo_none {
     display: none;
 }
+
+.enabled + .header__further-logo {
+    display: none;
+}

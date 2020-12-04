@@ -1,6 +1,6 @@
 .search-results__header {
     margin: 0 0 0 0;
-    font-family: RobotoSlab;
+    font-family: RobotoSlab, 'Arial', sans-serif;
     font-weight: 400;
     font-size: 1.67rem;
     line-height: 1.92rem;

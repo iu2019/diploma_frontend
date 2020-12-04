@@ -8,7 +8,7 @@
   display: block;
   cursor: pointer;
   
-  font-family: Roboto;
+  font-family: Roboto , 'Arial', sans-serif;
   font-weight: 600;
   border-radius: 80px;
   border: none;

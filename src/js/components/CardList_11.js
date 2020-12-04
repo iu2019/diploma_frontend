@@ -1,7 +1,7 @@
-import Api from './Api'
-import {createNewCard} from './Card'
-import {PopupHolder} from './Popup'
-import {renderLoading} from './renderLoading'
+import Api from '../api/Api_11'
+import {createNewCard} from './Card_11'
+import {PopupHolder} from './Popup_11'
+import {renderLoading} from './renderLoading_11'
 
 const api = new Api;
 
