@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NewsAnalyzer</title>
-    <link rel="stylesheet" href="main.1e8b5801d875d6d4def3.css">
+    <link rel="stylesheet" href="main.a387600d8eedbfcaf7f0.css">
     <link rel="icon" href="./images/favicon.svg" type="image/x-icon">
     <!-- ./images/logo.svg -->
     <!-- <link rel="stylesheet" href="./pages/index.css"> -->
-  <link href="main.1e8b5801d875d6d4def3.css" rel="stylesheet"></head>
+  <link href="main.a387600d8eedbfcaf7f0.css" rel="stylesheet"></head>
 
   <body class="body">
  
@@ -20,7 +20,7 @@
       
         
       <!-- DESKTOP -->
-      <page class="page screen_desktop">
+      <div class="page screen_desktop">
         <!-- Для открытия верстки одной из секций header и header_logged нужно класс 
         тэга nav противоположной секции header дополнить миксом disabled. Для открываемой секции модификатор не нужен. -->
         <header class="header header_theme_dark screen_desktop disabled ">
@@ -85,22 +85,17 @@
           <div class="search-results__placeholder">
                 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_1">
+              <div >
+                <img src="./images/image_08.jpg" alt="Растения" class="news-card__image ">
                                <!-- ./images/logo.svg -->
-                <button class="news-card__message news-card__message_position_left">
-                  <p class="news-card__comment">Природа</p>
-                </button>
+                <button class="news-card__message news-card__message_position_left news-card__comment">Природа</button>
                 
                 <button class="news-card__delete-icon disabled"></button>
-                <button class="news-card__message">
-                  <p class="news-card__comment">Убрать из сохраненных</p>
-                </button>
+                <button class="news-card__message news-card__comment">Убрать из сохраненных</button>
 
                 <!-- Активнай лайк - дополнить ниже и в других подобных местах модификатором news-card__like-icon_liked  -->
                 <button class="news-card__like-icon "></button>
-                <button class="news-card__message ">
-                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
-                </button>
+                <button class="news-card__message news-card__comment ">Войдите, чтобы сохранять статьи</button>
               </div>
 
               <div class="news-card__text-container">
@@ -117,21 +112,16 @@
             </div>
 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_2" >
+              <div>
+                <img src="./images/image_04.jpg" alt="Крупнолистные растения" class="news-card__image ">
                 <!-- style="background-image:url('../../../images/image_04.jpg')" -->
-                <button class="news-card__message news-card__message_position_left">
-                  <p class="news-card__comment">Природа</p>
-                </button>
+                <button class="news-card__message news-card__message_position_left news-card__comment">Природа</button>
                 
                 <button class="news-card__delete-icon disabled"></button>
-                <button class="news-card__message">
-                  <p class="news-card__comment">Убрать из сохраненных</p>
-                </button>
+                <button class="news-card__message news-card__comment">Убрать из сохраненных</button>
 
                 <button class="news-card__like-icon "></button>
-                <button class="news-card__message ">
-                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
-                </button>
+                <button class="news-card__message news-card__comment ">Войдите, чтобы сохранять статьи</button>
               </div>
               
               <div class="news-card__text-container">
@@ -147,20 +137,15 @@
             </div>
 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_3" >
-                <button class="news-card__message news-card__message_position_left">
-                  <p class="news-card__comment">Природа</p>
-                </button>
+              <div>
+                <img src="./images/image_07.jpg" alt="Мелколистные растения" class="news-card__image ">
+                <button class="news-card__message news-card__message_position_left news-card__comment">Природа</button>
                 
                 <button class="news-card__delete-icon disabled"></button>
-                <button class="news-card__message">
-                  <p class="news-card__comment">Убрать из сохраненных</p>
-                </button>
+                <button class="news-card__message news-card__comment">Убрать из сохраненных</button>
 
                 <button class="news-card__like-icon "></button>
-                <button class="news-card__message ">
-                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
-                </button>
+                <button class="news-card__message news-card__comment ">Войдите, чтобы сохранять статьи</button>
               </div>
               
               <div class="news-card__text-container">
@@ -186,7 +171,7 @@
             <i class="preloader__circle"></i>
             
           </div>  
-          <p class="preloader__text">Идет поиск новостей...</p>
+          <h2 class="preloader__text">Идет поиск новостей...</h2>
           
         </section>
 
@@ -241,12 +226,12 @@
           popup дополнить миксом enabled. Другие две секции должны не иметь этого микса -->
             <div class="popup__content">
               
-              <img src="./images/close.svg" alt="X" class="popup__close ">
+              <img src="./images/close.svg" alt="Крестик" class="popup__close ">
               <h3 class="popup__title">Вход</h3>
               <form class="popup__form" name="signin">
                   <div class="popup__block">
                     <label for="email" class = "popup__label">Email</label>
-                    <input type="email" name="email" class="popup__input email" placeholder="Введите почту" 
+                    <input id="email" type="email" name="email" class="popup__input email" placeholder="Введите почту" minlength="6"
                       title="The domain portion of the email address is invalid (the portion after the @)." 
                       pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
                       required>
@@ -255,12 +240,12 @@
                   </div>  
                   <div class="popup__block">
                     <label for="pwd" class = "popup__label">Пароль</label>
-                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                    <input id="pwd" type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
                     
                       <p class="popup__error-message "></p>
                   </div>  
-                   
-                  <button class="button popup__button ">Войти</button>
+                   <!-- Для перевода кнопки в активное состояние (синее) добавьте ниже (и в других попапах) модификатор popup__button_active -->
+                  <input type="submit" class="button popup__button " value="Войти">
                   <p class="popup__link-line">или <a href="./index.html" class="popup__link">Зарегистрироваться</a></p>
               </form>
             </div>
@@ -271,30 +256,31 @@
           <div class="popup ">
             <div class="popup__content popup__content_func_signup">
               
-              <img src="./images/close.svg" alt="X" class="popup__close ">
+              <img src="./images/close.svg" alt="Крестик" class="popup__close ">
               <h3 class="popup__title">Регистрация</h3>
               <form class="popup__form" name="signup" novalidate>
                   <div class="popup__block popup__block_func_signup">
-                    <label for="email" class = "popup__label">Email</label>
-                    <input type="email" name="email" class="popup__input email" placeholder="Введите почту" 
+                    <label for="email_signup" class = "popup__label">Email</label>
+                    <input id="email_signup" type="email" name="email" class="popup__input email" placeholder="Введите почту" 
                       title="The domain portion of the email address is invalid (the portion after the @)." 
                       pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
-                      <p class="popup__error-message ">Неправильный формат email</p>
+                      
                       required>
+                      <p class="popup__error-message ">Неправильный формат email</p>
                     <p class="popup__error-message "></p>
                   </div>  
                   <div class="popup__block popup__block_func_signup">
-                    <label for="pwd" class = "popup__label">Пароль</label>
-                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                    <label for="pwd_signup_desktop" class = "popup__label">Пароль</label>
+                    <input id="pwd_signup_desktop" type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
                     <p class="popup__error-message "></p>
                   </div>  
                   <div class="popup__block popup__block_func_signup">
                     <label for="name" class = "popup__label">Имя</label>
-                    <input type="text" name="name" class="popup__input name" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
+                    <input id="name" type="text" name="name" class="popup__input name" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
                     
                   </div>
                   <p class="popup__error-message popup__error-message_func_db-error">Такой пользователь уже есть</p>
-                  <button class="button popup__button">Зарегистрироваться</button>
+                  <input type="submit" class="button popup__button " value="Зарегистрироваться">
                   <p class="popup__link-line">или <a href="" class="popup__link">Войти</a></p>
               </form>
             </div>
@@ -304,19 +290,19 @@
         <section class="signup_successful ">
           <div class="popup popup_func_signup_successful ">
             <div class="popup__content popup__content_func_signup_successful">
-              <img src="./images/close.svg" alt="X" class="popup__close ">
-              <p class="popup__title">Пользователь успешно зарегистрирован!</p>
+              <img src="./images/close.svg" alt="Крестик" class="popup__close ">
+              <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
               <p class="popup__link-line popup__link-line_func_signup_successful"><a href="" class="popup__link">Войти</a></p>
               
             </div>
           </div>
         </section>
         
-      </page>
+      </div>
 
       <!-- MOBILE -->
 
-      <page class="page screen_mobile">
+      <div class="page screen_mobile">
         <header class="header header_theme_dark header_screen_mobile screen_mobile">
                   
           <nav class="header header_screen_mobile">
@@ -353,8 +339,7 @@
             
             <!-- Для открытия попапа дополнительного меню авторизации мобильной версии нужно класс popup-mobile (выше) дополнить классом enabled.  -->
             <div class="popup-mobile__content  ">
-              <!-- <img src="./images/close.svg" alt="X" class="popup__close "> -->
-              <!-- <img src="./images/close_mob.jpg" alt="X" class="popup-mobile__close "> -->
+              
               <header class="header header_theme_dark header_screen_mobile screen_mobile">
                   
                 <!-- <nav class="header header_screen_mobile">
@@ -366,7 +351,7 @@
       
                 <nav class="header header_screen_mobile">
                   <div class="header__placeholder">
-                    <p class="header__logo header_theme_dark header__logo_mobile">NewsExplorer</p>
+                    <h2 class="header__logo header_theme_dark header__logo_mobile">NewsExplorer</h2>
                     <ul class="header__link-container">
                       
                       <li class="header__list-item">
@@ -403,20 +388,15 @@
           <div class="search-results__placeholder screen_mobile">
                 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_1" >
-                <button class="news-card__message news-card__message_position_left">
-                  <p class="news-card__comment">Природа</p>
-                </button>
+              <div>
+                <img src="./images/image_08.jpg" alt="Растения" class="news-card__image ">
+                <button class="news-card__message news-card__message_position_left news-card__comment">Природа</button>
                 
                 <button class="news-card__delete-icon disabled"></button>
-                <button class="news-card__message">
-                  <p class="news-card__comment">Убрать из сохраненных</p>
-                </button>
+                <button class="news-card__message news-card__comment">Убрать из сохраненных</button>
 
                 <button class="news-card__like-icon "></button>
-                <button class="news-card__message ">
-                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
-                </button>
+                <button class="news-card__message news-card__comment ">Войдите, чтобы сохранять статьи</button>
               </div>
 
               <div class="news-card__text-container">
@@ -433,20 +413,15 @@
             </div>
 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_2" >
-                <button class="news-card__message news-card__message_position_left">
-                  <p class="news-card__comment">Природа</p>
-                </button>
+              <div>
+                <img src="./images/image_04.jpg" alt="Крупнолистные растения" class="news-card__image ">
+                <button class="news-card__message news-card__message_position_left news-card__comment">Природа</button>
                 
                 <button class="news-card__delete-icon disabled"></button>
-                <button class="news-card__message">
-                  <p class="news-card__comment">Убрать из сохраненных</p>
-                </button>
+                <button class="news-card__message news-card__comment">Убрать из сохраненных</button>
 
                 <button class="news-card__like-icon news-card__like-icon_liked"></button>
-                <button class="news-card__message ">
-                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
-                </button>
+                <button class="news-card__message  news-card__comment ">Войдите, чтобы сохранять статьи</button>
               </div>
               
               <div class="news-card__text-container">
@@ -462,20 +437,15 @@
             </div>
 
             <div class="news-card">
-              <div class="news-card__image news-card__image_example_3" >
-                <button class="news-card__message news-card__message_position_left">
-                  <p class="news-card__comment">Природа</p>
-                </button>
+              <div>
+                <img src="./images/image_07.jpg" alt="Мелколистные растения" class="news-card__image ">
+                <button class="news-card__message news-card__message_position_left news-card__comment">Природа</button>
                 
                 <button class="news-card__delete-icon disabled"></button>
-                <button class="news-card__message">
-                  <p class="news-card__comment">Убрать из сохраненных</p>
-                </button>
+                <button class="news-card__message news-card__comment">Убрать из сохраненных</button>
 
                 <button class="news-card__like-icon "></button>
-                <button class="news-card__message ">
-                  <p class="news-card__comment ">Войдите, чтобы сохранять статьи</p>
-                </button>
+                <button class="news-card__message news-card__comment ">Войдите, чтобы сохранять статьи</button>
               </div>
               
               <div class="news-card__text-container">
@@ -538,29 +508,31 @@
         </footer>
 
         <section class="signin">
-          <div class="popup ">
+          <div class="popup enabled">
           <!-- Для открытия верстки попапа одной из секций signin, signup или signup_successful нужно класс 
           popup дополнить миксом enabled. Другие две секции должны не иметь этого микса -->
           
-          
-          
-          <div class="popup__content">
-              <!-- <img src="./images/close.svg" alt="X" class="popup__close "> -->
-              <img src="./images/menu_mob.svg" alt="X" class="popup__close ">
+            <div class="popup__content">
+             
+              <img src="./images/close_no_bckg.svg" alt="Крестик" class="popup__close ">
+              
               <h3 class="popup__title">Вход</h3>
               <form class="popup__form" name="signin" novalidate>
                   <div class="popup__block">
-                    <label for="email" class = "popup__label">Email</label>
-                    <input type="text" name="email" class="popup__input email" placeholder="Введите почту">
+                    <label for="email_mob_signin" class = "popup__label">Email</label>
+                    <input id="email_mob_signin" type="email" name="email" class="popup__input email" placeholder="Введите почту" minlength="6"
+                      title="The domain portion of the email address is invalid (the portion after the @)." 
+                      pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                      required>
                     <p class="popup__error-message ">Неправильный формат email</p>
                   </div>  
                   <div class="popup__block">
-                    <label for="pwd" class = "popup__label">Пароль</label>
-                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль">
-                    <p class="popup__error-message "></p>
+                    <label for="pwd_mob_signin" class = "popup__label">Пароль</label>
+                    <input id="pwd_mob_signin" type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                     <p class="popup__error-message "></p>
                   </div>  
                    
-                  <button class="button popup__button ">Войти</button>
+                  <input type="submit" class="button popup__button " value="Войти">
                   <p class="popup__link-line">или <a href="index.html" class="popup__link">Зарегистрироваться</a></p>
               </form>
             </div>
@@ -570,27 +542,32 @@
         <section class="signup ">
           <div class="popup ">
             <div class="popup__content popup__content_func_signup">
-              <!-- <img src="./images/close.svg" alt="X" class="popup__close "> -->
-              <img src="./images/menu_mob.svg" alt="X" class="popup__close ">
+              
+              <img src="./images/close_no_bckg.svg" alt="Крестик" class="popup__close ">
               <h3 class="popup__title">Регистрация</h3>
               <form class="popup__form" name="signin" novalidate>
                   <div class="popup__block popup__block_func_signup">
-                    <label for="email" class = "popup__label">Email</label>
-                    <input type="text" name="email" class="popup__input email" placeholder="Введите почту">
+                    <label for="email_mob" class = "popup__label">Email</label>
+                    <input id="email_mob" type="email" name="email" class="popup__input email" placeholder="Введите почту" 
+                      title="The domain portion of the email address is invalid (the portion after the @)." 
+                      pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                      
+                      required>                  
+                      <p class="popup__error-message "></p>
+                  </div>  
+                  <div class="popup__block popup__block_func_signup">
+                    <label for="pwd_mob" class = "popup__label">Пароль</label>
+                    <input id="pwd_mob" type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
                     <p class="popup__error-message "></p>
                   </div>  
                   <div class="popup__block popup__block_func_signup">
-                    <label for="pwd" class = "popup__label">Пароль</label>
-                    <input type="text" name="pwd" class="popup__input pwd" placeholder="Введите пароль">
-                    <p class="popup__error-message "></p>
-                  </div>  
-                  <div class="popup__block popup__block_func_signup">
-                    <label for="name" class = "popup__label">Имя</label>
-                    <input type="text" name="name" class="popup__input name" placeholder="Введите своё имя">
+                    <label for="name_mob" class = "popup__label">Имя</label>
+                    <input id="name_mob" type="text" name="name" class="popup__input name" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
                     
                   </div>
                   <p class="popup__error-message popup__error-message_func_db-error">Такой пользователь уже есть</p>
-                  <button class="button popup__button">Зарегистрироваться</button>
+                  
+                  <input type="submit" class="button popup__button" value="Зарегистрироваться">
                   <p class="popup__link-line">или <a href="index.html" class="popup__link">Войти</a></p>
               </form>
             </div>
@@ -600,15 +577,16 @@
         <section class="signup_successful ">
           <div class="popup popup_func_signup_successful ">
             <div class="popup__content popup__content_func_signup_successful">
-              <img src="./images/menu_mob.svg" alt="X" class="popup__close ">
-              <p class="popup__title">Пользователь успешно зарегистрирован!</p>
+              <img src="./images/close_no_bckg.svg" alt="Крестик" class="popup__close ">
+              <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
               <p class="popup__link-line popup__link-line_func_signup_successful"><a href="index.html" class="popup__link">Войти</a></p>
               
             </div>
           </div>
         </section>
 
-      </page>
+      </div>
+    </div>
 
 
   <script src="main.e4d5cd462b697492c476.js"></script></body>
